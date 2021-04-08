@@ -1,0 +1,8 @@
+안녕~~
+
+<form action="{% url 'users:main' %}" method='post'>
+    {% csrf_token %}
+    <input type="input" name="username" placeholder="사용자이름">
+    <input type="password" name="password" placeholder="비밀번호">
+    <input type="submit" value="Login">
+</form>
